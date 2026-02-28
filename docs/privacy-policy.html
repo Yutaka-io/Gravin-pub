@@ -34,16 +34,16 @@
   <h2>1. Data We Collect</h2>
   <p>The App collects the following data:</p>
   <ul>
-    <li><strong>Journal data</strong>: Goals, reflections, and journal entries entered by the user. This data is primarily stored in a local database on the device and is also stored in Firebase Firestore for backup purposes.</li>
-    <li><strong>Anonymous authentication ID</strong>: An anonymous ID automatically issued by Firebase Authentication. It does not contain personally identifiable information (such as name or email address). If the user signs in with a Google or Apple account, that account information will be linked.</li>
-    <li><strong>Crash logs</strong>: Technical error information collected through Firebase Crashlytics when the App crashes.</li>
-    <li><strong>Usage data</strong>: Anonymous statistical data on screen transitions and events collected through Firebase Analytics.</li>
+    <li><strong>Journal data</strong>: Goals, reflections, and journal entries entered by the user. This data is stored on the device and backed up to cloud servers.</li>
+    <li><strong>Authentication information</strong>: An anonymous ID is automatically assigned to each user. If the user signs in with a Google or Apple account, that account information will be linked.</li>
+    <li><strong>Crash logs</strong>: Technical error information collected when the App crashes, used to improve stability.</li>
+    <li><strong>Usage data</strong>: Anonymous statistical data on app usage for service improvement.</li>
   </ul>
 
   <h2>2. Where Data Is Stored</h2>
   <ul>
-    <li><strong>Local (on device)</strong>: Journal data is first stored on the user's device (SQLite database).</li>
-    <li><strong>Firebase (cloud)</strong>: Data is encrypted and stored on Google Firebase servers (located in the United States and other regions) as a backup.</li>
+    <li><strong>On device</strong>: Journal data is first stored locally on the user's device.</li>
+    <li><strong>Cloud</strong>: Data is encrypted and stored on cloud servers as a backup.</li>
   </ul>
 
   <h2>3. How We Use Data</h2>
@@ -52,21 +52,15 @@
     <li>Data backup and cross-device synchronization</li>
     <li>Improving App quality (detecting and fixing crashes)</li>
     <li>Service improvement through usage analysis</li>
-    <li>Generating AI coaching feedback (premium feature)</li>
   </ul>
 
-  <h2>4. Third-Party Sharing</h2>
-  <p>The App does not sell or provide users' personal data to third parties. However, the following services are used to operate the App, and their providers may access some data:</p>
-  <ul>
-    <li><strong>Google Firebase</strong> (Authentication, Firestore, Crashlytics, Analytics, Cloud Functions)</li>
-    <li><strong>OpenAI API</strong> (text processing for AI coaching features; journal content is sent to their servers)</li>
-    <li><strong>Adapty</strong> (subscription management)</li>
-  </ul>
+  <h2>4. Third-Party Services</h2>
+  <p>The App does not sell or provide users' personal data to third parties. However, the App uses third-party services for authentication, data storage, analytics, crash reporting, and subscription management. These service providers may access some data as necessary to operate their services.</p>
 
   <h2>5. Data Deletion</h2>
   <p>Users can delete their data at any time.</p>
   <ul>
-    <li><strong>In-App</strong>: Deleting your account from the settings screen will remove all local data and data stored on Firebase.</li>
+    <li><strong>In-App</strong>: Deleting your account from the settings screen will remove all local and cloud data.</li>
     <li><strong>Contact us</strong>: You may also request data deletion by contacting us at the address below.</li>
   </ul>
 
@@ -91,16 +85,16 @@
     <h2>1. 収集するデータ</h2>
     <p>本アプリは以下のデータを収集します。</p>
     <ul>
-      <li><strong>ジャーナルデータ</strong>: ユーザーが入力した目標、振り返り、ジャーナルの内容。主に端末のローカルデータベースに保存され、バックアップ目的で Firebase Firestore にも保存されます。</li>
-      <li><strong>匿名認証ID</strong>: Firebase Authentication により自動発行される匿名IDです。個人を特定する情報（氏名、メールアドレス等）は含まれません。Google または Apple アカウントでサインインした場合、そのアカウント情報が紐付けられます。</li>
-      <li><strong>クラッシュログ</strong>: アプリの異常終了時に Firebase Crashlytics を通じて収集される技術的なエラー情報です。</li>
-      <li><strong>利用状況データ</strong>: Firebase Analytics を通じて収集される画面遷移やイベントの匿名統計データです。</li>
+      <li><strong>ジャーナルデータ</strong>: ユーザーが入力した目標、振り返り、ジャーナルの内容。端末内に保存され、クラウドサーバーにバックアップされます。</li>
+      <li><strong>認証情報</strong>: ユーザーごとに自動発行される匿名IDです。Google または Apple アカウントでサインインした場合、そのアカウント情報が紐付けられます。</li>
+      <li><strong>クラッシュログ</strong>: アプリの異常終了時に収集される技術的なエラー情報で、安定性の改善に使用されます。</li>
+      <li><strong>利用状況データ</strong>: サービス改善のためのアプリ利用に関する匿名統計データです。</li>
     </ul>
 
     <h2>2. データの保存場所</h2>
     <ul>
-      <li><strong>ローカル（端末内）</strong>: ジャーナルデータはまずユーザーの端末内（SQLite データベース）に保存されます。</li>
-      <li><strong>Firebase（クラウド）</strong>: バックアップとして Google Firebase のサーバー（所在地: 米国等）に暗号化して保存されます。</li>
+      <li><strong>端末内</strong>: ジャーナルデータはまずユーザーの端末内に保存されます。</li>
+      <li><strong>クラウド</strong>: バックアップとしてクラウドサーバーに暗号化して保存されます。</li>
     </ul>
 
     <h2>3. データの利用目的</h2>
@@ -109,21 +103,15 @@
       <li>データのバックアップと端末間同期</li>
       <li>アプリの品質改善（クラッシュの検知・修正）</li>
       <li>利用状況の分析によるサービス改善</li>
-      <li>AI によるコーチングフィードバックの生成（プレミアム機能）</li>
     </ul>
 
-    <h2>4. 第三者への提供</h2>
-    <p>本アプリは、ユーザーの個人データを第三者に販売・提供することはありません。ただし、以下のサービスをアプリの運営に利用しており、これらのサービス提供者がデータの一部にアクセスする場合があります。</p>
-    <ul>
-      <li><strong>Google Firebase</strong>（認証、データベース、Crashlytics、Analytics、Cloud Functions）</li>
-      <li><strong>OpenAI API</strong>（AI コーチング機能のためのテキスト処理。ジャーナル内容がサーバーに送信されます）</li>
-      <li><strong>Adapty</strong>（サブスクリプション管理）</li>
-    </ul>
+    <h2>4. 第三者サービス</h2>
+    <p>本アプリは、ユーザーの個人データを第三者に販売・提供することはありません。ただし、認証、データ保存、分析、クラッシュレポート、サブスクリプション管理のために第三者サービスを利用しており、これらのサービス提供者が運営上必要な範囲でデータの一部にアクセスする場合があります。</p>
 
     <h2>5. データの削除</h2>
     <p>ユーザーはいつでも自分のデータを削除できます。</p>
     <ul>
-      <li><strong>アプリ内</strong>: 設定画面からアカウント削除を実行すると、ローカルデータおよび Firebase 上のデータがすべて削除されます。</li>
+      <li><strong>アプリ内</strong>: 設定画面からアカウント削除を実行すると、端末内およびクラウド上のデータがすべて削除されます。</li>
       <li><strong>お問い合わせ</strong>: 下記の連絡先にデータ削除をご依頼いただくことも可能です。</li>
     </ul>
 
